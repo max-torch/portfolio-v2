@@ -8,7 +8,7 @@ The Freelancer theme is built using Node.js, Pug, and SCSS during its developmen
 
 ## Deployment
 
-Deploy by running `npm run gh-deploy`. Solution from [here](https://gist.github.com/cobyism/4730490?permalink_comment_id=4234018#gistcomment-4234018).
+GitHub Actions is used to deploy the website to GitHub Pages and is triggered whenever a commit is pushed to the `master` branch.
 
 ## Template Credits
 
