@@ -48,3 +48,18 @@
         }
     }
 }
+
+// Styling for the portfolio item hover captions
+#portfolio-item-1-caption {
+    background-color: rgb(228, 148, 1);
+}
+
+// Bullet list inside of the modals
+.portfolio-modal-list {
+    text-align: left;
+}
+
+.portfolio-modal-legal-attribution {
+    font-size: .75rem;
+    color: $gray-600;
+}

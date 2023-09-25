@@ -9,7 +9,7 @@
                     .row.justify-content-center
                         .col-lg-8
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Log Cabin
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Park King
                             // Icon Divider
                             .divider-custom
                                 .divider-custom-line
@@ -17,10 +17,24 @@
                                     i.fas.fa-star
                                 .divider-custom-line
                             // Portfolio Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/cabin.png', alt='...')
+                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/park_king.png', alt='Park King')
                             // Portfolio Modal - Text
                             p.mb-4
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                            button.btn.btn-primary(data-bs-dismiss='modal')
+                                | I joined Mapa Web Development (MWD) as a Software Developer, tasked with providing expertise across various aspects of software development. During my nine-month tenure, together with one other junior software developer, we accomplished the development of a mobile app from inception to successful deployment.
+                            // Portfolio Modal - List
+                            ul.portfolio-modal-list
+                                li Collaborated closely with a fellow software developer, who was new to the role, to develop a mobile app. We utilized Flutter for the mobile client, Python Flask for the back end, used DragonPay for payment processing, Firebase for authentication, and Firestore for the database.
+                                li Provided all the necessary requirements for successful acceptance and deployment of the app to the Google Play Store and Apple App Store
+                                li Orchestrated the setup of separate local, development, and production environments for controlled development and testing processes
+                                li Implemented CI/CD pipelines using GitLab and Docker for the back-end services, achieving high test code coverage and detailed documentation
+                                li Managed Google Cloud infrastructure, ensuring cost efficiency, permissions, and security measures               
+                            // Button to Google Play Store Page
+                            a.btn.btn-primary.btn-light.btn-lg(href='https://play.google.com/store/apps/details?id=com.reconlab.parkkingapp.prod&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1', target='_blank')
+                                img(src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png', alt='Get it on Google Play', width='200')
+                            // Close Modal button
+                            button.btn.btn-primary.btn-lg(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw
                                 | Close Window
+            .modal-footer.border-0
+                p.portfolio-modal-legal-attribution
+                    | Google Play and the Google Play logo are trademarks of Google LLC. &#124; Park King and the Park King logo are trademarks of Mapa Web Development.

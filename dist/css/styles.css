@@ -11051,6 +11051,19 @@ html {
   }
 }
 
+#portfolio-item-1-caption {
+  background-color: rgb(228, 148, 1);
+}
+
+.portfolio-modal-list {
+  text-align: left;
+}
+
+.portfolio-modal-legal-attribution {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
