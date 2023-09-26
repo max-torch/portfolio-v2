@@ -124,50 +124,43 @@ html(lang='en')
                     .col-lg-8.col-xl-7
 
                         // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
+                        // * * Formspree Contact Form * *
                         // * * * * * * * * * * * * * * *
 
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
+                        // This form is pre-integrated with Formspree.
+                        // To make this form functional, replace API_TOKEN with your api token.
 
-                        form#contactForm(data-sb-form-api-token='API_TOKEN')
+                        form#contactForm(action='https://formspree.io/f/API_TOKEN', method='POST')
 
                             // Name input
                             .form-floating.mb-3
                                 input#name.form-control(
                                     type='text',
                                     placeholder='Enter your name...',
-                                    data-sb-validations='required'
+                                    name='name',
+                                    required=''
                                 )
                                 label(for='name') Full name
-                                .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
 
                             // Email address input
                             .form-floating.mb-3
                                 input#email.form-control(
                                     type='email',
                                     placeholder='name@example.com',
-                                    data-sb-validations='required,email'
+                                    name='_replyto',
+                                    required=''
                                 )
                                 label(for='email') Email address
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
 
                             // Phone number input
                             .form-floating.mb-3
                                 input#phone.form-control(
                                     type='tel',
                                     placeholder='(123) 456-7890',
-                                    data-sb-validations='required'
+                                    name='phone',
+                                    required=''
                                 )
                                 label(for='phone') Phone number
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
 
                             // Message input
                             .form-floating.mb-3
@@ -175,34 +168,18 @@ html(lang='en')
                                     type='text',
                                     placeholder='Enter your message here...',
                                     style='height: 10rem;',
-                                    data-sb-validations='required'
+                                    name='message',
+                                    required=''
                                 )
                                 label(for='message') Message
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
 
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3 Error sending message!
+                            // Sets the subject of Formspree notification emails
+                            input(type='hidden', name='_subject', value='Sent from portfolio-v2.')
+                            // Catches (some) spambots
+                            input(type='text', name='_gotcha', style='display:none')
 
                             // Submit Button
-                            button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Send
+                            button#submitButton.btn.btn-primary.btn-xl(type='submit') Send
 
         // Footer
         footer.footer.text-center
@@ -220,6 +197,8 @@ html(lang='en')
                             i.fab.fa-fw.fa-facebook-f
                         a.btn.btn-outline-light.btn-social.mx-1(href='https://www.linkedin.com/in/alexanderzlacson/')
                             i.fab.fa-fw.fa-linkedin-in
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://github.com/max-torch')
+                            i.fab.fa-fw.fa-github
                     // Footer About Text
                     .col-lg-4
                         h4.text-uppercase.mb-4 Template Credits
