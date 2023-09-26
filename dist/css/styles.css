@@ -11055,6 +11055,10 @@ html {
   background-color: rgb(228, 148, 1);
 }
 
+#portfolio-item-2-caption {
+  background-color: rgb(241, 80, 100);
+}
+
 .portfolio-modal-list {
   text-align: left;
 }
@@ -11062,6 +11066,10 @@ html {
 .portfolio-modal-legal-attribution {
   font-size: 0.75rem;
   color: #6c757d;
+}
+
+.portfolio-modal-technology-img {
+  height: 48px;
 }
 
 .footer {

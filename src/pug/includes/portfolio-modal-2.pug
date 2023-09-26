@@ -9,18 +9,55 @@
                     .row.justify-content-center
                         .col-lg-8
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Tasty Cake
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Data Visualization for Pazito's Time Tracker
                             // Icon Divider
                             .divider-custom
                                 .divider-custom-line
                                 .divider-custom-icon
                                     i.fas.fa-star
                                 .divider-custom-line
-                            // Portfolio Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/cake.png', alt='...')
                             // Portfolio Modal - Text
                             p.mb-4
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                | I added a "Visualize Data" feature to a time tracking app called Time Tracker.                                
+                            // Portfolio Modal - Image 1
+                            figure
+                                a(href='https://user-images.githubusercontent.com/41433185/126899216-498ef0c5-35a5-4d90-a7d9-01c3f4f8b3f0.png', target='_blank')
+                                    img.img-fluid.rounded(src='https://user-images.githubusercontent.com/41433185/126899216-498ef0c5-35a5-4d90-a7d9-01c3f4f8b3f0.png', alt='Horizontal Bar Graph')
+                                figcaption.mb-5
+                                    | Sample output of the chart that shows time tracked per day. Click to view full size.
+                            // Portfolio Modal - Image 2
+                            figure
+                                a(href='https://user-images.githubusercontent.com/41433185/126899204-cbd9520b-217b-415e-9c87-9de702c32655.png', target='_blank')
+                                    img.img-fluid.rounded(src='https://user-images.githubusercontent.com/41433185/126899204-cbd9520b-217b-415e-9c87-9de702c32655.png', alt='Vertical Bar Graph')
+                                figcaption.mb-5
+                                    | Sample output of the chart that shows time tracked per project. Click to view full size.
+                            // View GitHub Pull Request button
+                            a.btn.btn-secondary.mb-5(href='https://github.com/Pazitos10/time-tracker/pull/3', target='_blank')
+                                i.fab.fa-github.me-2
+                                | GitHub Pull Request
+                                i.fas.fa-external-link-alt.ml-2
+                            // Major Technologies Used
+                            h3.text-secondary.text-uppercase.mb-3 Technologies Used
+                            .d-flex.flex-wrap.justify-content-center.mb-5
+                                .d-flex.flex-column.align-items-center.m-3
+                                    img.portfolio-modal-technology-img(src='https://pandas.pydata.org/static/img/pandas_mark.svg', alt='Pandas')
+                                    p.text-center.mb-0 pandas
+                                .d-flex.flex-column.align-items-center.m-3
+                                    img.portfolio-modal-technology-img(src='https://chart-studio.plotly.com/static/webapp/images/plotly-logo.8d56a320dbb8.png', alt='Plotly')
+                                    p.text-center.mb-0 Plotly
+                                .d-flex.flex-column.align-items-center.m-3
+                                    img.portfolio-modal-technology-img(src='assets/img/portfolio/modal_assets/PyQt-Logo.wine.svg', alt='PyQt')
+                                    p.text-center.mb-0 PyQt
+                            // Portfolio Modal - List
+                            h3.text-secondary.text-uppercase.mb-3 Details
+                            ul.portfolio-modal-list.mb-4
+                                li PyQt knowledge was used to add a "Visualize Data" option to the app's menu bar
+                                li pandas was used to process the app data to make it suitable for plotting
+                                li Plotly was used to create the charts
+                            // Close Modal button
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw
                                 | Close Window
+            .modal-footer.border-0
+                p.portfolio-modal-legal-attribution
+                    | All logos and trademarks in this page are property of their respective owners.
