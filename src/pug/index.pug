@@ -127,10 +127,7 @@ html(lang='en')
                         // * * Formspree Contact Form * *
                         // * * * * * * * * * * * * * * *
 
-                        // This form is pre-integrated with Formspree.
-                        // To make this form functional, replace API_TOKEN with your api token.
-
-                        form#contactForm(action='https://formspree.io/f/API_TOKEN', method='POST')
+                        form#contactForm(action=`https://formspree.io/f/xnqlpedv`, method='POST')
 
                             // Name input
                             .form-floating.mb-3
@@ -147,7 +144,7 @@ html(lang='en')
                                 input#email.form-control(
                                     type='email',
                                     placeholder='name@example.com',
-                                    name='_replyto',
+                                    name='email',
                                     required=''
                                 )
                                 label(for='email') Email address
