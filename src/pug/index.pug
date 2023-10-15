@@ -73,6 +73,7 @@ html(lang='en')
                     // Portfolio Item 1
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
+                            span.portfolio-item-text.text-white.px-2.py-1 Tap or Click to open
                             .portfolio-item-caption#portfolio-item-1-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-white.px-4.py-3
                                     | Full-stack cross-platform mobile app development for Mapa Web Development
@@ -80,6 +81,7 @@ html(lang='en')
                     // Portfolio Item 2
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
+                            span.portfolio-item-text.text-white.px-2.py-1 Tap or Click to open
                             .portfolio-item-caption#portfolio-item-2-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-white.px-4.py-3
                                     | Data Visualization for Pazito's Time Tracker
@@ -99,14 +101,20 @@ html(lang='en')
                 // About Section Content
                 .row#about-content
                     .col-lg-4.ms-auto
-                        p.lead
-                            | I consider myself a strategic and analytical person. I prefer to make decisions that are informed by data. When I receive information, I like to contextualize it in terms of where it came from and its degree of uncertainty.
+                        div
+                            h3 Data-driven
+                            p.lead
+                                | I consider myself a strategic and analytical person. I prefer to make decisions that are informed by data. When I receive information, I like to contextualize it in terms of where it came from and its degree of uncertainty.
                     .col-lg-4
-                        p.lead
-                            | Whatever your technology stack is, given enough time I can get the hang of any part of it. Just point me in the right direction and show me the official documentation.
+                        div
+                            h3 Adaptable
+                            p.lead
+                                | Whatever your technology stack is, given enough time I can get the hang of any part of it. Just point me in the right direction and show me the official documentation.
                     .col-lg-4.me-auto
-                        p.lead
-                            | I believe that innovation only thrives when people feel like they are respected and cared for. People who feel like they do not belong will not share their ideas, or may not even bother to come up with any.
+                        div
+                            h3 Caring
+                            p.lead
+                                | I believe that innovation only thrives when people feel like they are respected and cared for. People who feel like they do not belong will not share their ideas, or may not even bother to come up with any.
 
         // Contact Section
         section#contact.page-section
@@ -227,10 +235,3 @@ html(lang='en')
 
         // Core theme JS
         script(src='js/scripts.js')
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')

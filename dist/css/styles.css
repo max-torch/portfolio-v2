@@ -11034,6 +11034,9 @@ html {
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
 }
+.portfolio .portfolio-item .portfolio-item-text {
+  position: absolute;
+}
 
 .portfolio-modal .btn-close {
   color: #1abc9c;
