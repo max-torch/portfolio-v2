@@ -14,23 +14,21 @@
                             .divider-custom
                                 .divider-custom-line
                                 .divider-custom-icon
-                                    i.fas.fa-star
+                                    i.fas.fa-microchip
                                 .divider-custom-line
                             // Portfolio Modal - Text
                             p.mb-4
-                                | I made a Dashboard App                                
+                                | I created a dashboard web application for The Battle for Wesnoth, a free turn-based strategy game.                                
                             // Portfolio Modal - Image 1
                             figure
-                                a(href='https://user-images.githubusercontent.com/41433185/126899216-498ef0c5-35a5-4d90-a7d9-01c3f4f8b3f0.png', target='_blank')
-                                    img.img-fluid.rounded(src='https://user-images.githubusercontent.com/41433185/126899216-498ef0c5-35a5-4d90-a7d9-01c3f4f8b3f0.png', alt='Horizontal Bar Graph')
+                                a(href='https://raw.githubusercontent.com/wesnoth/wesnoth-multiplayer-data-dashboard/main/readme_assets/full_page.png', target='_blank')
+                                    img.img-fluid.rounded(src='https://raw.githubusercontent.com/wesnoth/wesnoth-multiplayer-data-dashboard/main/readme_assets/full_page.png', alt='Screenshot of the Wesnoth Dashboard')
                                 figcaption.mb-5
-                                    | Statistics
-                            // Portfolio Modal - Image 2
-                            figure
-                                a(href='https://user-images.githubusercontent.com/41433185/126899204-cbd9520b-217b-415e-9c87-9de702c32655.png', target='_blank')
-                                    img.img-fluid.rounded(src='https://user-images.githubusercontent.com/41433185/126899204-cbd9520b-217b-415e-9c87-9de702c32655.png', alt='Vertical Bar Graph')
-                                figcaption.mb-5
-                                    | Query
+                                    | App Screenshot
+                            // View Live App button
+                            a.btn.btn-secondary.mb-5(href='https://replays.wesnoth.org/dashboard/', target='_blank')
+                                | Visit the Live Application
+                                i.fas.fa-external-link-alt.ml-2
                             // Major Technologies Used
                             h3.text-secondary.text-uppercase.mb-3 Technologies Used
                             .d-flex.flex-wrap.justify-content-center.mb-5
@@ -39,16 +37,40 @@
                                     p.text-center.mb-0 pandas
                                 .d-flex.flex-column.align-items-center.m-3
                                     img.portfolio-modal-technology-img(src='https://chart-studio.plotly.com/static/webapp/images/plotly-logo.8d56a320dbb8.png', alt='Plotly')
-                                    p.text-center.mb-0 Plotly
+                                    p.text-center.mb-0 Plotly Dash
                                 .d-flex.flex-column.align-items-center.m-3
-                                    img.portfolio-modal-technology-img(src='assets/img/portfolio/modal_assets/PyQt-Logo.wine.svg', alt='PyQt')
-                                    p.text-center.mb-0 PyQt
+                                    img.portfolio-modal-technology-img(src='https://mariadb.com/wp-content/uploads/2019/11/vertical-logo_black.svg', alt='MariaDB')
+                                    p.text-center.mb-0 MariaDB
+                                .d-flex.flex-column.align-items-center.m-3
+                                    img.portfolio-modal-technology-img(src='https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg', alt='Bootstrap')
+                                    p.text-center.mb-0 Bootstrap                                    
                             // Portfolio Modal - List
                             h3.text-secondary.text-uppercase.mb-3 Details
                             ul.portfolio-modal-list.mb-4
-                                li The "Visualize Data" option was added to the app's menu bar, which was coded using PyQt.
-                                li The app data was processed using pandas to make it suitable for plotting.
-                                li The charts were created using Plotly.
+                                li 
+                                    | I identified that there was an opportunity to create a dashboard after I saw that there was a monthly
+                                    a(href='https://forums.wesnoth.org/viewtopic.php?t=57533') Multiplayer Activity Report
+                                    | that was being manually prepared and released. 
+                                li I created a proof-of-concept for the Wesnoth organization to interact with before they decided to officially adopt my dashboard.
+                                li
+                                    a(href='https://plotly.com/') Plotly
+                                    | was used for interactive and dynamic visualizations.
+                                li
+                                    a(href='https://plotly.com/dash/') Dash
+                                    | was employed for building the web application.
+                                li
+                                    a(href='https://pandas.pydata.org/') pandas
+                                    | was utilized for data manipulation and producing derived features from raw data.
+                                li
+                                    | The
+                                    a(href='https://mariadb.com/resources/blog/how-to-connect-python-programs-to-mariadb/') MariaDB Python Connector
+                                    | enabled connection to a MariaDB database and execution of SQL queries in Python.
+                                li
+                                    a(href='https://getbootstrap.com/') Bootstrap
+                                    | was used for styling the web application, aligning the graphs and tables within cards, and providing UI components for modals and buttons.
+                                li
+                                    a(href='https://dash-bootstrap-components.opensource.faculty.ai/') Dash Bootstrap Components
+                                    |was used for integrating Bootstrap components into Dash.
                             // Close Modal button
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw

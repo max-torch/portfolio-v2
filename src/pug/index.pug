@@ -70,6 +70,14 @@ html(lang='en')
                     .divider-custom-line
                 // Portfolio Grid Items
                 .row.justify-content-center
+                    // Portfolio Item 3
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
+                            span.portfolio-item-text.text-white.px-2.py-1 Tap or Click to open
+                            .portfolio-item-caption#portfolio-item-3-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-white.px-4.py-3
+                                    | Multiplayer Statistics Dashboard Website for Battle for Wesnoth
+                            img.img-fluid.border(src='assets/img/portfolio/wesnoth.png', alt='Wesnoth Dashboard')
                     // Portfolio Item 1
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
@@ -86,14 +94,6 @@ html(lang='en')
                                 .portfolio-item-caption-content.text-white.px-4.py-3
                                     | Data Visualization for Pazito's Time Tracker
                             img.img-fluid.border(src='assets/img/portfolio/time_tracker.jpeg', alt='Pazito\'s Time Tracker')
-                    // Portfolio Item 3
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
-                            span.portfolio-item-text.text-white.px-2.py-1 Tap or Click to open
-                            .portfolio-item-caption#portfolio-item-3-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-white.px-4.py-3
-                                    | Multiplayer Statistics Dashboard Website for Battle for Wesnoth
-                            img.img-fluid.border(src='assets/img/portfolio/wesnoth.png', alt='Wesnoth Dashboard')
 
         // About Section
         section#about.page-section.bg-primary.text-white.mb-0
@@ -228,7 +228,7 @@ html(lang='en')
         // Copyright Section
         div.copyright.py-4.text-center.text-white
             .container
-                small Copyright &copy; Alexander Lacson 2023
+                small Copyright &copy; Alexander Lacson 2024
 
         // Portfolio Modals
         include includes/portfolio-modal-1.pug
