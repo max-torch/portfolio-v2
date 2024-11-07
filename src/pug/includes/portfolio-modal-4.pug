@@ -9,18 +9,55 @@
                     .row.justify-content-center
                         .col-lg-8
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Controller
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Algorithmics and ANALI Bacolod
                             // Icon Divider
                             .divider-custom
                                 .divider-custom-line
                                 .divider-custom-icon
-                                    i.fas.fa-star
+                                    i.fas.fa-microchip
                                 .divider-custom-line
-                            // Portfolio Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/game.png', alt='...')
                             // Portfolio Modal - Text
                             p.mb-4
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                | I developed a web application for a franchisee of ANALI and Algorithmics, both children's STEM education platforms, to facilitate registrations for Introductory Lessons and Assessments.
+                            // Portfolio Modal - Image
+                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/algorithmics_screen1.png', alt='Registration Form Screenshot')
+                            // Major Technologies Used
+                            h3.text-secondary.text-uppercase.mb-3 Technologies Used
+                            .d-flex.flex-wrap.justify-content-center.mb-5
+                                .d-flex.flex-column.align-items-center.m-3
+                                    img.portfolio-modal-technology-img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/683px-Figma-logo.svg.png', alt='Figma')
+                                    p.text-center.mb-0 Figma
+                                .d-flex.flex-column.align-items-center.m-3
+                                    img.portfolio-modal-technology-img(src='assets/img/portfolio/modal_assets/flask_logo.png', alt='Flask')
+                                    p.text-center.mb-0 Flask
+                                .d-flex.flex-column.align-items-center.m-3
+                                    img.portfolio-modal-technology-img(src='assets/img/portfolio/modal_assets/App Engine.png', alt='App Engine')
+                                    p.text-center.mb-0 App Engine
+                                .d-flex.flex-column.align-items-center.m-3
+                                    img.portfolio-modal-technology-img(src='assets/img/portfolio/modal_assets/Identity-Aware Proxy.png', alt='Identity-Aware Proxy')
+                                    p.text-center.mb-0 Identity-Aware Proxy
+                                .d-flex.flex-column.align-items-center.m-3
+                                    img.portfolio-modal-technology-img(src='assets/img/portfolio/modal_assets/Firestore.png', alt='Firestore')
+                                    p.text-center.mb-0 Firestore
+                                .d-flex.flex-column.align-items-center.m-3
+                                    img.portfolio-modal-technology-img(src='https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg', alt='Bootstrap')
+                                    p.text-center.mb-0 Bootstrap
+                            // Portfolio Modal - List
+                            h3.text-secondary.text-uppercase.mb-3 Details
+                            ul.portfolio-modal-list.mb-4
+                                li At the beginning, I created a mockup using Figma to set expectations with the client and make sure we were on the same page.
+                                li There was no infrastructure or anything in place when I began, so I really had to go fullstack and set everything up from scratch. Within Google Cloud, I carefully selected a cloud solution that would not incur regular costs for the client.
+                                li I used App Engine for hosting, Identity-Aware Proxy for authentication, and Firestore for the database. I made sure the client understood basics of how to manage the infrastructure of the application, such as how to go into the Google Cloud and Firebase Consoles to view settings and data.
+                                li The usage of Flask allowed me to easily integrate the development of the backend and frontend, especially with the tools in its ecosystem like Jinja and WTForms.
+                                li As a solo dev, Bootstrap was great in saving me time ensuring the front end was responsive and aesthetically pleasing.
+                                li I made two variants of the application, the difference being the color scheme and some of the words used, to match the two different brands, Algorithmics and ANALI, of the client.
+                                li The forms employ client-side and server-side validation and protection against cross-site request forgery.
+                                li The web application has pages that give feedback such as error pages and success pages.
+                                li The web application has functionality for the client to view and download the data of the registrations.
+                            // Close Modal button
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw
                                 | Close Window
+            .modal-footer.border-0
+                p.portfolio-modal-legal-attribution
+                    | All logos and trademarks in this page are property of their respective owners.                                

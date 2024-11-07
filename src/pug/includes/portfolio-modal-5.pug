@@ -9,18 +9,52 @@
                     .row.justify-content-center
                         .col-lg-8
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Locked Safe
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 TTS Cards
                             // Icon Divider
                             .divider-custom
                                 .divider-custom-line
                                 .divider-custom-icon
-                                    i.fas.fa-star
+                                    i.fas.fa-microchip
                                 .divider-custom-line
-                            // Portfolio Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/safe.png', alt='...')
                             // Portfolio Modal - Text
                             p.mb-4
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                | I created a desktop GUI application called TTS Cards that allows you to convert cards in Tabletop Simulator, a digital platform for creating and playing board games and card games, into printable PDFs. Perfect for print and play of fanmade content and expansions, as well as for boardgame developers making prototypes, or for making proxies.
+                            // Portfolio Modal - Youtube video
+                            iframe.mb-5(width='560', height='315', src='https://www.youtube.com/embed/HYznnMbBXkg?si=CDEQagb35GbKepHj', title='YouTube video player', frameborder='0', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share', referrerpolicy='strict-origin-when-cross-origin', allowfullscreen)
+                            // Portfolio Modal - Image 1
+                            figure
+                                img.img-fluid.rounded.mb-5(src='assets/img/portfolio/modal_assets/ttscardsscreen.png', alt='TTS Cards GUI')
+                                figcaption.mb-5
+                                    | App Interface
+                            // Portfolio Modal - Image 2
+                            figure
+                                img.img-fluid.rounded.mb-5(src='assets/img/portfolio/modal_assets/ttscardsoutput.png', alt='TTS Cards Output')
+                                figcaption.mb-5
+                                    | Sample Output PDF
+                            // View GitHub Repo button
+                            a.btn.btn-secondary.mb-5(href='https://github.com/max-torch/TTSCards', target='_blank')
+                                i.fab.fa-github.me-2
+                                | View the Source Code on GitHub
+                                i.fas.fa-external-link-alt.ml-2 
+                            // Major Technologies Used
+                            h3.text-secondary.text-uppercase.mb-3 Technologies Used
+                            .d-flex.flex-wrap.justify-content-center.mb-5
+                                .d-flex.flex-column.align-items-center.m-3
+                                    img.portfolio-modal-technology-img(src='https://wiki.tcl-lang.org/image/Tcl%2FTk+Core+Logo+128+Alternate', alt='TkInter')
+                                    p.text-center.mb-0 TkInter
+                                .d-flex.flex-column.align-items-center.m-3
+                                    img.portfolio-modal-technology-img(src='https://raw.githubusercontent.com/python-pillow/pillow-logo/refs/heads/main/pillow-logo-248x250.png', alt='Pillow')
+                                    p.text-center.mb-0 Pillow      
+                            // Portfolio Modal - List
+                            h3.text-secondary.text-uppercase.mb-3 Details
+                            ul.portfolio-modal-list.mb-4
+                                li I used TkInter for the GUI and Pillow for image processing.
+                                li From consulting online and looking at the Tabletop Simulator object files, I was able to determine the format of the files and how to extract the card images. I employ recursive search to find all the cards in the object files.
+                                li I made the app behave properly on the PC operating system, such as by saving the output files in the user's documents folder, and having a proper setup to have the app installed in the correct directories.
+                            // Close Modal button
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw
                                 | Close Window
+            .modal-footer.border-0
+                p.portfolio-modal-legal-attribution
+                    | All logos and trademarks in this page are property of their respective owners.
