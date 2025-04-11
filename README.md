@@ -10,6 +10,10 @@ The Freelancer theme is built using Node.js, Pug, and SCSS during its developmen
 
 GitHub Actions is used to deploy the website to GitHub Pages and is triggered whenever a commit is pushed to the `master` branch.
 
+## Development
+
+Run `npm start` to start live preview while developing.
+
 ## Template Credits
 
 This portfolio website is based on the [Freelancer](https://startbootstrap.com/theme/freelancer/) template, which is available for free on [Start Bootstrap](https://startbootstrap.com/).
